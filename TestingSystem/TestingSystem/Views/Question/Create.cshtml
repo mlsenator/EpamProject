@@ -1,0 +1,52 @@
+﻿@using BLL.Interface.Entities
+@model BLL.Interface.Entities.BLLQuestion
+
+@{
+  ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Ajax.BeginForm("CreateAjax","Question", new AjaxOptions {UpdateTargetId = "results", OnComplete = "onCompleteAjax"}))
+{
+  @Html.AntiForgeryToken()
+
+  <div class="form-horizontal">
+    <h4>BLLQuestion</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+    <div class="row">
+      <div class="form-group">
+        @Html.LabelFor(model => model.QuestionText, htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-4">
+          @Html.ValidationMessageFor(model => model.QuestionText, "", new {@class = "text-danger"})
+          @Html.EditorFor(model => model.QuestionText, new {htmlAttributes = new {@class = "form-control"}})
+          @Html.HiddenFor(model => model.TestId, new {@id = "testId"})
+        </div>
+        <div class="col-md-4">
+          <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img id="add-answer-form" src="../../Content/plus.png" alt="Plus" style="width: 20px; height: 20px; margin-left: 200px;">
+    </div>
+    <div class="row" style="padding-top: 10pt">
+      <div id="list-questions">
+
+      </div>
+    </div>
+    <div id="results" style="margin-left:180px;display:inline-block;margin-top:20px;"></div>
+  </div>
+}
+
+<div>
+  @Html.ActionLink("Back to test", "Edit", "TestManager", new {id = Model.TestId}, null)
+</div>
+
+@section Scripts {
+  @Scripts.Render("~/bundles/jqueryval")
+  @Scripts.Render("~/bundles/forms")
+  @Scripts.Render("~/bundles/ajax")
+}

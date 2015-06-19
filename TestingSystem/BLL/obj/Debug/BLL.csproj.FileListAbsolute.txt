@@ -1,0 +1,11 @@
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\BLL.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\BLL.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\BLL.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\DAL.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\BLL.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\DAL.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\obj\Debug\BLL.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\obj\Debug\BLL.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\Entity.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\BLL\bin\Debug\Entity.Interface.pdb

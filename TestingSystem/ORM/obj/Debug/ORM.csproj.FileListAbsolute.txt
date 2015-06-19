@@ -1,0 +1,12 @@
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\ORM.dll.config
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\ORM.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\ORM.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\EntityFramework.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\EntityFramework.xml
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\obj\Debug\ORM.csprojResolveAssemblyReference.cache
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\obj\Debug\ORM.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\obj\Debug\ORM.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\Entity.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\ORM\bin\Debug\Entity.Interface.pdb

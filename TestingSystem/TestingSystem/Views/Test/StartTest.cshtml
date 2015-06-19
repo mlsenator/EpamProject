@@ -1,0 +1,45 @@
+﻿@model BLL.Interface.Entities.BLLTest
+
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>@Html.DisplayFor(m => m.Name)</h2>
+
+@using ( Html.BeginForm() )
+{
+    @Html.HiddenFor(m => m.Id)
+    foreach(var item in Model.Questions)
+    {
+        <div>
+            @Html.DisplayFor(q => item.QuestionText)
+        </div>
+        if (item.NumOfRightAnswers > 1)
+        {
+            foreach (var answ in item.Answers)
+            {
+                @Html.CheckBox(answ.Id.ToString())
+                <label for=@answ.Id> @answ.AnswerText </label>
+                <br />
+            }
+        }
+        else
+        {
+            foreach (var answ in item.Answers)
+            {
+                @Html.RadioButton(answ.QuestionId.ToString(), answ.Id)
+                <label for=@answ.Id> @answ.AnswerText </label>
+                <br />
+            }
+        }
+
+        <br />
+    }
+
+    <div>
+        <input id="StartTest" type="submit" value="Send answers" />
+    </div>
+}
+
+
+

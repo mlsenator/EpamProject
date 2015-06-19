@@ -1,0 +1,7 @@
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\bin\Debug\DAL.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\bin\Debug\DAL.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\obj\Debug\DAL.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\obj\Debug\DAL.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\bin\Debug\Entity.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\DAL.Interface\bin\Debug\Entity.Interface.pdb

@@ -1,0 +1,52 @@
+﻿@model TestingSystem.Models.LogOnViewModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<section id="loginForm">
+    <h2>Use your own login and password to log in</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>Log in Form</legend>
+            <ol>
+                <li>
+                    <div>
+                        @Html.LabelFor(model => model.Login)
+                    </div>
+                    <div>
+                        @Html.TextBoxFor(model => model.Login)
+                        @Html.ValidationMessageFor(model => model.Login)
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        @Html.LabelFor(model => model.Password)
+                    </div>
+                    <div>
+                        @Html.PasswordFor(model => model.Password)
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </div>             
+                </li>
+                <li>
+                    <div>
+                        @Html.CheckBoxFor(model => model.RememberMe)
+                        @Html.LabelFor(model => model.RememberMe)
+                    </div>
+                </li>
+            </ol>
+            <input type="submit" value="Log in" class="btn btn-default" />
+        </fieldset>
+        <p>
+            <hr />
+            @Html.ActionLink("Register", "Register") if you don't have an account.
+        </p>
+    }
+</section>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,42 @@
+﻿@model BLL.Interface.Entities.BLLTestResult
+
+@{
+    ViewBag.Title = "TestResultDetails";
+}
+
+<h2>Результаты теста</h2>
+
+<table border="1">
+    <tr>
+        <th>№</th>
+        <th>Question</th>
+        <th>Right answers</th>
+        <th>Given answeers</th>
+    </tr>
+    @for (int i = 0; i < Model.Test.Questions.Count; i++)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@Model.Test.Questions[i].QuestionText</td>
+            <td>
+                <ul>
+                    @foreach (var a in Model.Test.Questions[i].Answers.Where(answ => answ.IsRight == true))
+                    {
+                        <li>@a.AnswerText </li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    @foreach (var a in Model.GivenAnswers.Where(answ => answ.Answer.QuestionId == Model.Test.Questions[i].Id))
+                    {
+                        <li>@a.Answer.AnswerText</li>
+                    }
+                </ul>
+
+            </td>
+
+        </tr>
+    }
+</table>
+

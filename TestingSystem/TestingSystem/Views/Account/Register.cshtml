@@ -1,0 +1,61 @@
+﻿@model TestingSystem.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<hgroup class="title">
+    <h2>Create a new account.</h2>
+</hgroup>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <fieldset>
+        <legend>Registration Form</legend>
+        <ol>
+            <li>
+                <div>
+                    @Html.LabelFor(model => model.Login)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Login)
+                    @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                </div>
+            </li>
+            <li>
+                <div>
+@Html.LabelFor(model => model.Email)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Email)
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </li>
+            <li>
+                <div>
+                    @Html.LabelFor(model => model.Password)
+                </div>
+                <div>
+                    @Html.PasswordFor(model => model.Password)
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </li>
+            <li>
+                <div>
+                    @Html.LabelFor(model => model.ConfirmPassword)
+                </div>
+                <div>
+                    @Html.PasswordFor(model => model.ConfirmPassword)
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                </div>              
+            </li>
+        </ol>
+        <input type="submit" value="Register" />
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,5 @@
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\Entity.Interface\bin\Debug\Entity.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\Entity.Interface\bin\Debug\Entity.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\Entity.Interface\obj\Debug\Entity.Interface.dll
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\Entity.Interface\obj\Debug\Entity.Interface.pdb
+C:\Users\Sensor\documents\visual studio 2013\Projects\TestingSystem\Entity.Interface\obj\Debug\Entity.Interface.csprojResolveAssemblyReference.cache

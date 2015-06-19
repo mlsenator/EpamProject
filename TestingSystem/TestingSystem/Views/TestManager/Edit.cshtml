@@ -1,0 +1,81 @@
+﻿@model BLL.Interface.Entities.BLLTest
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Edit test</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">    
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Duration, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Duration, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Duration, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <p>
+            @Html.ActionLink("Add question", "Create", "Question", new {testId = Model.Id}, null)
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    Questions:
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var q in Model.Questions)
+            {
+                <tr>
+                    <td>
+                        @q.QuestionText
+                        <ul>
+                            @foreach (var a in q.Answers)
+                            {
+                                <li>
+                                    @a.AnswerText
+                                </li>
+                            }
+                        </ul>
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", "Question", new { id = q.Id }, null) |
+                        @Html.ActionLink("Delete", "Delete", "Question", new { id = q.Id }, null)
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

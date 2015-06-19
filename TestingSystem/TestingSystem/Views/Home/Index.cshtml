@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BLL.Interface.Entities.BLLTest>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of tests</h2>
+<hr />
+<div>
+    <p>
+        @{ foreach (var u in @Model)
+         {
+            @Html.ActionLink(u.Name, "TestInfo", "Test", new { id = u.Id }, null)
+            <br>
+         }
+        }
+    </p>
+</div>
+
+
+
